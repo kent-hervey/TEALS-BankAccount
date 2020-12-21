@@ -10,6 +10,7 @@ public class BankAccount {
 	public BankAccount() {
 		numAccounts++;
 		this.accountNumber= "AB" + numAccounts;
+		this.numAccounts = this.numAccounts + 1;
 	}
 	
 	public void  withdraw(int amountWithdraw) {
@@ -17,6 +18,7 @@ public class BankAccount {
 		if(amountWithdraw<this.accountBalance) {
 			this.accountBalance= this.accountBalance - amountWithdraw;
 			System.out.println("Your withdrawal was accepted.  New blanace is:  " + this.accountBalance);
+			totalDollarsInBank = totalDollarsInBank -amountWithdraw;
 		}
 		else {
 			System.out.println("You do not have sufficient funds for this withdrawal.  Balance is still:  " + this.accountBalance);
@@ -27,6 +29,7 @@ public class BankAccount {
 	public void deposit(int amountDeposit) {
 		
 		this.accountBalance = this.accountBalance + amountDeposit;
+		totalDollarsInBank = totalDollarsInBank +  amountDeposit;
 		
 		System.out.println("Your deposit complete.  New balance is: " + this.accountBalance);
 				
