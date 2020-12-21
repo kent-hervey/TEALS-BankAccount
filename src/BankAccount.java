@@ -12,23 +12,23 @@ public class BankAccount {
 		this.accountNumber= "AB" + numAccounts;
 	}
 	
-	public String  withdraw(int amountWithdraw) {
+	public void  withdraw(int amountWithdraw) {
 		
 		if(amountWithdraw>this.accountBalance) {
 			this.accountBalance= this.accountBalance - amountWithdraw;
-			return "Your withdrawal was accepted.  New blanace is:  " + this.accountBalance;
+			System.out.println("Your withdrawal was accepted.  New blanace is:  " + this.accountBalance);
 		}
 		else {
-			return "You do not have sufficient funds for this withdrawal.  Balance is still:  " + this.accountBalance;
+			System.out.println("You do not have sufficient funds for this withdrawal.  Balance is still:  " + this.accountBalance);
 		}
 
 	}
 	
-	public String deposit(int amountDeposit) {
+	public void deposit(int amountDeposit) {
 		
 		this.accountBalance = this.accountBalance + amountDeposit;
 		
-		return "Your deposit complete.  New balance is: " + this.accountBalance;
+		System.out.println("Your deposit complete.  New balance is: " + this.accountBalance);
 				
 	}
 
