@@ -19,6 +19,10 @@ public class AccountDriver {
 		
 		account2.withdraw(700);
 		
+		
+		System.out.println("The bank now has this number of accounts:  " + BankAccount.numAccounts);
+		System.out.println("Total money in bank is now:  " + BankAccount.totalDollarsInBank);
+		
 
 	}
 
