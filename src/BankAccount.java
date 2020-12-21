@@ -14,7 +14,7 @@ public class BankAccount {
 	
 	public void  withdraw(int amountWithdraw) {
 		
-		if(amountWithdraw>this.accountBalance) {
+		if(amountWithdraw<this.accountBalance) {
 			this.accountBalance= this.accountBalance - amountWithdraw;
 			System.out.println("Your withdrawal was accepted.  New blanace is:  " + this.accountBalance);
 		}

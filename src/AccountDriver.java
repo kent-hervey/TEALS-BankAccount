@@ -15,6 +15,10 @@ public class AccountDriver {
 		System.out.println(account1);
 		System.out.println(account2);
 		
+		account1.withdraw(700);
+		
+		account2.withdraw(700);
+		
 
 	}
 
