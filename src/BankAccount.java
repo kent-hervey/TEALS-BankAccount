@@ -10,7 +10,6 @@ public class BankAccount {
 	public BankAccount() {
 		numAccounts++;
 		this.accountNumber= "AB" + numAccounts;
-		this.numAccounts = this.numAccounts + 1;
 	}
 	
 	public void  withdraw(int amountWithdraw) {
